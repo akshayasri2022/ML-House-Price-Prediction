@@ -3,7 +3,7 @@ import pickle as pk
 import streamlit as st
 
 # Load the model
-model = pk.load(open(r'C:\mlprojects\bhp.pkl', 'rb'))
+model = pk.load(open('bhp.pkl', 'rb'))
 
 # Load data
 data = pd.read_csv(r'C:\mlprojects\cleaned_data.csv')

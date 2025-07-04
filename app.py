@@ -2,10 +2,10 @@ import pandas as pd
 import pickle as pk
 import streamlit as st
 
-# ✅ Load the model from local repo (not C:\)
+# Load the model
 model = pk.load(open('bhp.pkl', 'rb'))
 
-# ✅ Load cleaned data from repo
+# Load cleaned data
 data = pd.read_csv('cleaned_data.csv')
 
 # Streamlit UI
